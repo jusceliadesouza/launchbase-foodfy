@@ -1,0 +1,56 @@
+:root {
+    --branco: #FFFFFF;
+
+    --cinzaClaro: #EEEEEE;
+    --cinzaClaro2:#DDDDDD;
+    --cinza: #999999;
+    --cinzaMedio: #777777;
+    --cinzaMedioEscuro: #444444;
+    --cinzaEscuro: #111111;
+
+    --red: #DC4747;
+    --rosa: #FBDFDB;
+    --violeta: #6558C3;
+}
+
+* {
+    background-color: black;
+}
+
+.logo a {
+    color: var(--branco);
+}
+
+section {
+    padding: 0;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+
+    margin: 0 auto;
+}
+
+.container-text {
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    vertical-align: auto;
+}
+
+
+h1 {
+    font-size: 60px;
+}
+
+p {
+    font-size: 24px;
+    margin-right: 0;
+}
+
+.container-image img {
+    margin-top: 80px;
+}

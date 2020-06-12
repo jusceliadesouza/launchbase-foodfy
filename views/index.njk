@@ -1,0 +1,62 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Foodfy</title>
+{% endblock %}
+
+{% block header %}
+    <div class="menu">
+        <a href="/about">Sobre</a>
+        <a href="/recipes">Receitas</a>
+        <a href="/admin/recipes">Admin</a>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <section class="content">
+        <div class="text">
+            <h1>As melhores receitas</h1>
+            <p>Aprenda a construir os melhores pratos
+                com receitas criadas por profissionais
+                do mundo inteiro.
+            </p>
+        </div>
+        <div class="content-image">
+            <img src="/assets/chef.png" alt="chef">
+        </div>
+    </section>
+
+    <section>
+        <h1>Mais acessadas</h1>
+        <div class="cards">
+            {% for recipe in recipes %}
+                <div class="card-modal">
+                    <div class="card__image">
+                        <img src={{recipe.image}} alt={{recipe.title}}>
+                    </div>
+
+                    <div class="card__info">
+                        <p id="title">{{recipe.title}}<p>
+                        <p id="author">{{recipe.author}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="card__img">
+                    <img src="" alt="">
+                </div>
+                <div class="card__info">
+                    <p id="title"></p>
+                    <p id="author"></p>
+                </div>
+            </div>
+            <p class="close-modal">Fechar modal</p>
+        </div>
+    </div>
+
+{% endblock %}

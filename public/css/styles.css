@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+@font-face {
+    font-family: 'Cochin';
+    src: url('fonts/Cochin.ttf');
+}
+
+:root {
+    --cinzaClaro: #EEEEEE;
+    --cinza: #999999;
+    --cinzaMedio: #777777;
+    --cinzaMedioEscuro: #444444;
+    --cinzaEscuro: #111111;
+    --rosa: #FBDFDB;
+}
+
+* { 
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+header, .content, section {
+    width: 940px;
+}
+
+header {
+    margin-top: 31px;
+    margin-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: 120px 1fr;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.menu {
+    margin-top: 27px;
+    display: grid;
+    grid-template-columns: 152px 1fr;
+}
+
+.logo {
+    margin: 0;
+    font-family:'Cochin', serif;
+    font-size: 28px;
+    letter-spacing: 1.65px;
+    line-height: 32px;
+    margin-right: 122.4px;
+}
+
+.logo a {
+    color: var(--cinzaEscuro);
+    text-decoration-line: none;
+}
+
+.links {
+    margin-left: 80px;
+    padding: 6px 0;
+}
+
+.links a {
+    margin: 0 30px;
+    font-size: 16px;
+    color: var(--cinzaEscuro);
+    text-decoration-line: none;
+    position: relative;
+}
+
+.links a + a {
+    margin-left: 30px;
+}
+
+.active {
+    font-weight: 700;
+}
+
+.links a:hover {
+    opacity: 0.9;
+}
+
+.links a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--cinzaEscuro);
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+}
+
+.links a:hover::after {
+    width: 100%;
+    transition: width 500ms ease-in-out;
+}  
+
+.content {
+    height: 366px;
+    background: var(--rosa);
+    border-radius: 30px;
+    margin-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.content .text {
+    padding: 117px 60px;
+}
+
+.content-image img {
+    margin: 65px 0;
+    margin-left: 100px;
+}
+
+.text {
+    color: var(--cinzaEscuro);
+}
+
+.text h1, h2, h3 {
+    font-weight: 700;
+}
+
+.text h1 {
+    font-size: 32px;
+}
+
+.text h2 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.text h3 {
+    font-size: 20px;    
+}
+
+.text p {
+    margin-top: 10px;
+    opacity: 0.7;
+    font-size: 18px;
+    color: black;
+    line-height: 28px;
+    text-align: justify;
+}
+
+section {
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.paragraph p {
+    margin: 20px auto;
+    font-size: 18px;
+    text-align: justify;
+    color: var(--cinzaMedioEscuro);
+    line-height: 28px;
+}
+
+/*<<< cards >>>*/
+.cards {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card, .card-modal {
+    width: 100%;
+    height: 202px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.card img:hover, .card-modal img:hover {
+    opacity: 0.7;
+}
+
+.card__image {
+    margin-bottom: 20px;
+}
+
+.card__image img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+}
+
+#title {
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--cinzaEscuro);
+}
+
+#author {
+    font-size: 14px;
+    color: var(--cinzaMedio);
+    margin-bottom: 30px;
+}
+
+/*<==receitas==>*/
+.recipe {
+    width: 100%;
+}
+
+.recipe .image {
+}
+
+.image img {
+    width: 940px;
+    height: 280px;
+    border-radius: 15px;
+}
+
+.info {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.recipe h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--cinzaEscuro);
+    margin-bottom: 4px;
+    line-height: 42px;
+    text-align: center;
+}
+
+.recipe #author {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--cinzaMedio);
+    margin-bottom: 50px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.recipe h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--cinzaEscuro);
+}
+
+.info a {
+    margin-left: 8px;
+    margin-top: 13px;
+    
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--cinza);
+    
+    cursor: pointer;
+}
+
+.info a:hover {
+    color: var(--cinzaMedio);
+}
+
+.detail-title {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+
+.disable {
+    display: none;
+}
+
+.info ul {
+    margin-left: 17px;
+    font-size: 18px;
+    color: var(--cinzaMedioEscuro);
+    margin-bottom: 39px;
+    line-height: 28px;
+}
+
+.info ul.dash {
+    list-style-type: "-  ";
+}
+
+.info p {
+    font-size: 18px;
+    color: var(--cinzaMedioEscuro);
+    line-height: 28px;
+    white-space: pre-line;
+}
+
+/* === MODAL === */
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+    width: 660px;
+    height: 413px;
+    border-radius: 16px;
+    margin: 20vh auto;
+    position: relative;
+    background-color: white;
+}
+
+/* === MODAL ACTIVE === */
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay .card__img {
+    padding: 30px 30px 20px 30px;
+}
+
+.modal-overlay img {
+    width: 600px;
+    height: 200px;
+    border-radius: 16px;
+}
+
+.modal-overlay .card__info, .modal-overlay .close-modal {
+    text-align: center;
+    font-weight: 400;
+}
+
+.modal-overlay #title {
+    font-size: 24px;
+    color: var(--cinzaEscuro);
+    line-height: 28px;
+}
+
+.modal-overlay #author {
+    font-size: 18px;
+    color: var(--cinzaMedio);
+    margin-top: 5px;
+    line-height: 21px;
+}
+
+.modal-overlay .close-modal {
+    margin-top: 60px;
+    font-size: 16px;
+    color: var(--cinza);
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.modal-overlay .close-modal:hover {
+    color: var(--cinzaMedioEscuro);
+}
+
+/* === RODAPÉ === */
+footer {
+    width: 100%;
+    /*height: 62px;*/
+    height: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+
+    background-color: var(--cinzaClaro);
+}
+
+footer p {
+    padding: 20px;
+    font-size: 14px;
+    color: var(--cinza);
+    text-align: center;
+}
