@@ -45,7 +45,7 @@ document
     .addEventListener("click", addStep);
 
 //acessar dados do input
-let time = null
+/*let time = null
 function handleKeyUp(event) {
     document.getElementById(event).value
 
@@ -59,7 +59,7 @@ function handleKeyUp(event) {
 
 document.querySelector('input')
         .addEventListener("keyup", handleKeyUp)
-
+*/
 
 /*<<< FUNCTIONS >>>*/
 function toHide(var1, var2) {
