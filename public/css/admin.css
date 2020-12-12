@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+@font-face {
+    font-family: 'Cochin';
+    src: url('fonts/Cochin.ttf');
+}
+
+:root {
+    --branco: #FFFFFF;
+
+    --cinzaClaro: #EEEEEE;
+    --cinzaClaro2:#DDDDDD;
+    --cinza: #999999;
+    --cinzaMedio: #777777;
+    --cinzaMedioEscuro: #444444;
+    --cinzaEscuro: #111111;
+
+    --red: #DC4747;
+    --rosa: #FBDFDB;
+    --violeta: #6558C3;
+}
+
+* { 
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+
+    padding-bottom: 50px;
+    background-color: var(--cinzaEscuro);
+    box-sizing: border-box;
+}
+
+section, .container, .menu {
+    width: 940px;
+}
+
+section {
+    height: auto;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.menu {
+    margin-top: 27px;
+
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-family:'Cochin', serif;
+    font-size: 28px;
+    letter-spacing: 1.65px;
+    line-height: 32px;
+}
+
+.logo a {
+    color: var(--cinzaClaro);
+    text-decoration-line: none;   
+}
+
+.links {
+    font-size: 16px;
+    margin-left: 0;
+}
+
+.links a + a {
+    margin-left: 30px;
+}
+
+.links a {
+    margin-right: 30px;
+    color: var(--cinzaMedio);
+    text-transform: uppercase;
+    text-decoration-line: none;
+    position: relative;
+    vertical-align: sub;
+}
+
+a.active {
+    font-weight: bold;
+    color: var(--branco);
+}
+
+.links a:hover {
+    opacity: 0.9;
+}
+
+.content {
+    margin-left: 0;
+}
+
+section {
+    height: auto;
+    margin-top: 55px;   
+}
+
+.sub-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+}
+
+.sub-menu :first-child {
+    margin-left: 0;
+}
+
+.sub-menu :last-child {
+    margin-right: 0;
+}
+
+.sub-menu h1 {
+    font-size: 24px;
+}
+
+.sub-menu a, button {
+    padding: 9px 20px;
+    border-radius: 4px;
+    
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--branco);
+    background-color: var(--violeta);
+    
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+#delete {
+    width: 92px;
+    background-color: var(--red);
+}
+
+.buttons.grid{
+    margin-right: 0;
+    
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+
+/* === CARD TABLE === */
+.card {
+    width: 940px;
+    min-width: 400px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* === INDEX RECIPES === */
+table {
+    margin-left: 0;
+
+}
+.table-container {
+    display: block;
+}
+
+.table-container table {
+    border-spacing: 0;
+}
+
+.table-container thead tr th {
+    text-align: left;
+}
+
+tbody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+tr {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 172px 1fr;
+}
+
+td {
+    margin-left: 0;
+}
+
+tbody tr td:last-child {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+}
+
+.table-container img {
+    width: 172px;
+    height: 80px;
+    border-radius: 8.57px;
+}
+
+#title {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+#author {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--cinzaMedio);
+}
+
+.table-container h1, 
+.table-container p,
+.table-container a {
+    margin-left: 0;
+}
+
+.table-container #title {
+    margin-bottom: -5px;
+}
+
+.table-container #author {
+    margin-bottom: 5px;
+}
+
+.table-container a {
+    background-color: none;
+    color:var(--violeta);
+    text-decoration: none;
+    padding: none;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+/* === SHOW === */
+.avatar img {
+    width: 940px;
+    height: 280px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.info {
+    margin: 0 auto;
+    margin-bottom: 31px;
+}
+
+.info h1 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: bold;
+    color: var(--cinzaEscuro);
+}
+
+.info p {
+    text-align: center;
+    font-size: 26px;
+    line-height: 24px;
+    color: var(--cinzaMedio);
+    margin-bottom: 31px;
+}
+
+.details {
+    max-width: 940px;
+}
+
+.details .item {
+    margin-bottom: 31px;
+}
+
+.details .item div:nth-child(1) {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 19px;
+}
+
+.details .item div:nth-child(2) {
+    text-align: justify;
+    line-height: 28px;
+    color: var(--cinzaMedioEscuro);
+    list-style-type: "-   ";
+}
+
+.details .item #information {
+    white-space: pre-line;
+}
+
+/* ===FORMS ===*/
+.card-form .item {
+    margin-bottom: 30px;
+}
+
+.card-form .item h3 {
+    margin-bottom: 10px;
+    color: var(--cinzaEscuro);
+
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+}
+
+input, 
+.card-form #title, 
+.card-form #author {
+    padding: 15px 20px;
+    margin-bottom: 15px;
+
+    color: var(--cinzaEscuro);
+    
+    
+    font-size: 16px;
+    line-height: 19px;
+}
+
+textarea {
+    height: 257px;
+    resize: none;
+    padding: 18px 20px;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 900px;
+    
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid var(--cinzaClaro2);
+
+    font: 16px 'Roboto', sans-serif;
+    text-align: justify;
+}
+
+.add-ingredient,
+.add-step {
+    background-color: transparent;
+    padding: 0;
+
+
+    color: var(--violeta);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+
+    cursor: pointer;
+}

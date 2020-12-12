@@ -183,7 +183,20 @@ section {
 }
 
 .card img:hover, .card-modal img:hover {
-    opacity: 0.7;
+    /* sombra */
+    box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.9);
+
+    /* animation */
+    animation-name: up 200ms ease-out;
+}
+
+@keyframes up {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.7;
+    }
 }
 
 .card__image {

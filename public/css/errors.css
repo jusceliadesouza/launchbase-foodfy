@@ -38,9 +38,8 @@ section {
     color: white;
     max-width: 800px;
     margin: 0 auto;
-    vertical-align: auto;
+    padding-top: 250px;
 }
-
 
 h1 {
     font-size: 60px;

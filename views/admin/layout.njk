@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="charset=UTF-8">
+    
+    {% block head %}{% endblock %}
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <a href="/">FoodFy</a>
+            </div>
+
+            <div class="links">
+                <a href="/admin/recipes">Receitas</a>
+                <!--a href="#">Chefs</a>
+                <a href="#">Usuários</a-->
+            </div>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <footer></footer>
+
+    <script src="/admin.js"></script>
+</body>
+</html>

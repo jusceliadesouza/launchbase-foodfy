@@ -2,7 +2,7 @@
     "recipes": [
         {
           "id": 0,
-          "image": "/assets/burger.png",
+          "image": "'/assets/burger.png'",
           "title": "Triplo bacon burger",
           "author": "Jorge Relato",
           "ingredients": [

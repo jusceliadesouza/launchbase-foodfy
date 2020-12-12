@@ -1,7 +1,4 @@
 node_modules
-admin
-controllers
-admin.css
-adm.css
-admin.js
+chefs.js
+users.js
 test.js

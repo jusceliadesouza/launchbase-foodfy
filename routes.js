@@ -42,7 +42,7 @@ routes.get('/admin/recipes/:id', recipes.show)
 routes.get('/admin/recipes/:id/edit', recipes.edit)
 routes.post('/admin/recipes', recipes.post)
 routes.put('/admin/recipes', recipes.put)
-routes.delete('admin/recipes', recipes.delete)
+routes.delete('/admin/recipes', recipes.delete)
 
 //chefs
 /*routes.get('/admin/chefs', chefs.index)
@@ -51,7 +51,7 @@ routes.get('/admin/chefs/:id', chefs.show)
 routes.get('/admin/chefs/:id/edit', chefs.edit)
 routes.post('/admin/chefs', chefs.post)
 routes.put('/admin/chefs', chefs.put)
-routes.delete('admin/chefs', chefs.delete)*/
+routes.delete('/admin/chefs', chefs.delete)*/
 
 //users
 /*routes.get('/admin/users', users.index)
@@ -60,6 +60,6 @@ routes.get('/admin/users/:id', users.show)
 routes.get('/admin/users/:id/edit', users.edit)
 routes.post('/admin/users', users.post)
 routes.put('/admin/users', users.put)
-routes.delete('admin/users', users.delete)*/
+routes.delete('/admin/users', users.delete)*/
 
 module.exports = routes;
