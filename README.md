@@ -21,7 +21,7 @@ O Foodfy está sendo desenvolvido como desafio final para o bootcamp Launchbase,
 
 3. **[x] Admin Foodfy:** Criação da área administratriva, rotas administrativas, detalhes da receita, campo dinâmico para insersão de ingredientes e modo de preparo
 
-4. **[] Persistindo Dados do Foodfy**
+4. **[] Persistindo Dados do Foodfy:** Criação de banco de dados, armazenamento com PostgreSQL, páginas de cadastro, listagem e edição de chefs, criação de uma busca de receitas com filtro por nome, paginação
 
 5. **[] Upload de Imagens**
 
