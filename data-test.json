@@ -144,21 +144,6 @@
       ],
       "information": "",
       "created_at": 1604616675962
-    },
-    {
-      "id": 6,
-      "image": "https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-      "title": "Pizza grega premium",
-      "author": "anônimo dois",
-      "ingredients": [
-        "item 1",
-        "item 2"
-      ],
-      "preparation": [
-        "step 1"
-      ],
-      "information": "vamos cozinhar",
-      "created_at": 1607134361975
     }
   ]
 }
